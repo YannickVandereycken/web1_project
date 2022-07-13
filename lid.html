@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lid worden</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/webstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Jost:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <section class="logotitle">
+        <a href="index.html"><img src="images/logo.jpg" alt="logo Wodan Skalden"></a>
+        <h1>Wodan Skalden</h1>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="koor.html">Over ons</a></li>
+            <li><a href="geschiedenis.html">Geschiedenis</a></li>
+            <li><a href="evenementen.html">Evenementen</a></li>
+            <li><a href="lid.html" class="here">Lid worden</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article id="form" class="container">
+        <h2>Lid worden?</h2>
+        <p>Ben je op zoek naar een muzikale hobby en een toffe vriendengroep? Heb jij een (stiekem) talent voor
+            zingen? Dan mag jij vrijblijvend een repetitie bijwonen, elke woensdag vanaf 20 uur.</p>
+        <h3>Wat wordt er van je verwacht!</h3>
+        <p>Hou zeker woensdagavond vrij. Voor concerten vragen we natuurlijk je engagement.</p>
+        <h3>Moet je noten kunnen lezen?</h3>
+        <p>Dat is handig, maar is geen vereiste. Niet iedereen in het koor kan noten lezen.</p>
+        <form action="#">
+            <p><label for="naam">Naam*</label><input type="text" id="naam" required autofocus></p>
+            <p><label for="voorNaam">Voornaam*</label><input type="text" id="voorNaam" required></p>
+            <p><label for="adres">Adres*</label><input type="text" id="adres" required></p>
+            <p><label for="telefoonnummer">Telefoonnummer*</label><input type="tel" id="telefoonnummer" required></p>
+            <p><label for="email">Email*</label><input type="email" id="email" required></p>
+            <p><label for="zangtype">Ja, ik wil graag lid worden en denk dat ik het volgende type zanger ben:</label>
+                <select id="zangtype" name="zangtype">
+                    <option value="geen">(Kies een van de volgende)</option>
+                    <option value="sopraan">Sopraan</option>
+                    <option value="alt">Alt</option>
+                    <option value="tenor">Tenor</option>
+                    <option value="bas">Bas</option>
+                </select>
+            </p>
+            <p><span>Ik zong al eerder in een koor</span><span class="buttons">
+                <input type="radio" id="ja" name="zangervaring" value="ja" required><label for="ja">Ja</label>
+                <input type="radio" id="nee" name="zangervaring" value="nee"><label for="nee">Nee</label>
+            </span></p>
+            <p><label for="textarea">Zo ja, welk?</label>
+                <textarea id="textarea" placeholder="Schrijf hier jouw koorervaring en waar dit was."
+                          rows="4"></textarea>
+            </p>
+            <p><label for="informatie">Bijkomende informatie</label>
+                <textarea id="informatie"
+                          placeholder="Hier kan je wat meer vertellen over jezelf." rows="4"></textarea>
+            </p>
+            <p class="long buttons"><label for="emails"><input type="checkbox" id="emails">Ik wil me inschrijven op de
+                nieuwsbrief van Wodan Skalden.</label></p>
+            <p class="long buttons"><label for="privacy"><input type="checkbox" id="privacy" required>Ik heb het privacy
+                beleid en de
+                <a href="https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_nl">GDPR/AVG-richtlijnen</a>
+                gelezen en ga hiermee akkoord.</label></p>
+            <p><input type="submit" id="verstuur" value="Indienen"></p>
+        </form>
+    </article>
+</main>
+<footer>
+    <section class="container">
+        <h3>Contact</h3>
+        <address id="contact">
+            <ul>
+                <li>Adres: Pakenstraat 65 - 3001 Heverlee</li>
+                <li>(Onze-Lieve-Vrouw van Troost kerk)</li>
+                <li>Telefoonnr: <a href="tel:+32498832322">+32 498 83 23 22</a></li>
+                <li>E-mail: <a href="mailto:info.wodanskalden@gmail.com">info.wodanskalden@gmail.com</a></li>
+            </ul>
+        </address>
+        <h3>Repetitie:</h3>
+        <div id="uren">
+            <ul>
+                <li>Woensdag: 20u - 22u</li>
+            </ul>
+        </div>
+        <p id="copyright"><i>© Wodan Skalden & Yannick Vandereycken</i></p>
+    </section>
+</footer>
+</body>
+</html>
